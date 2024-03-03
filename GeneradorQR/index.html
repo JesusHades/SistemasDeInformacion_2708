@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    <script defer src="./app.js"></script>
     <link rel="stylesheet" href="./estilos.css">
     <title>GENERADOR DE QR</title>
 </head>
 <body>
     
-    <div id = "qrcode">
+    <div class = "contenedor">
+        <form action="" id="formulario">
             <table class="tablaDatos">
                 <tr>
                     <th colspan="2" id="cabezaTabla">DATOS</th>
@@ -25,8 +24,13 @@
                 </tr>
             </table>
 
-            <button id="botonQR" onclick="generarQR()">GENERAR QR</button>
+            <button id="botonQR">GENERAR QR</button>
+        </form>
+        <div id="qrcode"></div>
     </div>
 
+    
 </body>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script  src="./app.js"></script>
 </html>
