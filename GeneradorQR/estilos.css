@@ -1,0 +1,15 @@
+#tablaDatos, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#tablaDatos{
+    align-self: center;
+}
+
+#cabezaTabla{
+    background-color: rgb(252, 51, 51);
+}
