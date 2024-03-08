@@ -7,7 +7,6 @@
 
     formulario.addEventListener('submit', (e) => {
         e.preventDefault();
-        QR.makeCode(`${formulario.numCuenta.value}
-                     ${formulario.Nombre.value}`);
+        QR.makeCode(`${formulario.numCuenta.value} \n ${formulario.Nombre.value}`);
 
     });
