@@ -7,6 +7,7 @@
 
     formulario.addEventListener('submit', (e) => {
         e.preventDefault();
-        QR.makeCode("Conferencia: " + formulario.NombreConferencia.value + " Ponente: " + formulario.NombrePonente.value);
+        QR.makeCode(`${formulario.numCuenta.value}
+                     ${formulario.Nombre.value}`);
 
     });
