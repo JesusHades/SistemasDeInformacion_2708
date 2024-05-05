@@ -39,6 +39,37 @@
 
   <button type="submit" class="btn btn-primary" name="botonRegistrar" value="ok">Registrar</button>
 </form>
+
+<div class="col-8 p-4">
+<table class="table">
+  <thead class="bg-info">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombres</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Numero de Cuenta</th>
+      <th scope="col">Fecha de Nacimiento</th>
+      <th scope="col">Correo Electronico</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="" class="btn btn-small btn-warning">Editar</a>
+        <a href="" class="btn btn-small btn-danger">Eliminar</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
     </div>
 
 </body>
