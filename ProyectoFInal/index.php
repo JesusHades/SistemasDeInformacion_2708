@@ -12,6 +12,11 @@
     <div class="container-fluid row">
     <form class="col-4 p-3" method="POST">
         <h3 class="text-center text-secondary">Registro de Alumnos</h3>
+
+        <?php
+        include "modelo/conexion.php";
+        include "controlador/registro.php";
+        ?>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombres del Alumno</label>
     <input type="text" class="form-control" name="nombres">
