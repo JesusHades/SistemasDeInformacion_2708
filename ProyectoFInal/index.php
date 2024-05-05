@@ -10,7 +10,7 @@
     <h1 class="text-center p-3" >Proyecto Final SI</h1>
 
     <div class="container-fluid row">
-    <form class="col-4 p-3">
+    <form class="col-4 p-3" method="POST">
         <h3 class="text-center text-secondary">Registro de Alumnos</h3>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombres del Alumno</label>
