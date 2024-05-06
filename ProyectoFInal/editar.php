@@ -16,7 +16,7 @@ $sql = $conexion->query(" select * from alumnos where id =$id");
 <body>
 <form class="col-4 p-3 m-auto" method="POST">
         <h3 class="text-center text-secondary">Modificar Registro de Alumno</h3>
-
+        <input type="hidden" name="id" value="<?= $_GET["id"] ?>">
         <?php
         include "controlador/editarAlumno.php";
         while($datos=$sql->fetch_object()){ ?>
