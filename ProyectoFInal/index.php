@@ -71,7 +71,7 @@
       <td><?= $datos->fecha ?></td>
       <td><?= $datos->correo ?></td>
       <td>
-        <a href="./editar.php" class="btn btn-small btn-warning">Editar</a>
+        <a href="editar.php?id=<?= $datos->id ?>" class="btn btn-small btn-warning">Editar</a>
         <a href="" class="btn btn-small btn-danger">Eliminar</a>
       </td>
     </tr>
