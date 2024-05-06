@@ -18,7 +18,7 @@ $sql = $conexion->query(" select * from alumnos where id =$id");
         <h3 class="text-center text-secondary">Modificar Registro de Alumno</h3>
 
         <?php
-
+        include "controlador/editarAlumno.php";
         while($datos=$sql->fetch_object()){ ?>
           <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombres del Alumno</label>
@@ -49,7 +49,7 @@ $sql = $conexion->query(" select * from alumnos where id =$id");
 
 
 
-  <button type="submit" class="btn btn-primary" name="botonRegistrar" value="ok">Registrar</button>
+  <button type="submit" class="btn btn-primary" name="botonRegistrar" value="ok">Modificar Registro</button>
 </form>
 
 </body>
