@@ -72,7 +72,7 @@
       <td><?= $datos->correo ?></td>
       <td>
         <a href="editar.php?id=<?= $datos->id ?>" class="btn btn-small btn-warning">Editar</a>
-        <a href="" class="btn btn-small btn-danger">Eliminar</a>
+        <a href="index.php?id=<?= $datos->id ?>" class="btn btn-small btn-danger">Eliminar</a>
       </td>
     </tr>
     <?php }
