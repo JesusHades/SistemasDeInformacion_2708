@@ -22,27 +22,27 @@ $sql = $conexion->query(" select * from alumnos where id =$id");
         while($datos=$sql->fetch_object()){ ?>
           <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombres del Alumno</label>
-    <input type="text" class="form-control" name="nombres">
+    <input type="text" class="form-control" name="nombres" value="<?= $datos->nombres ?>">
   </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Apellidos del Alumno</label>
-    <input type="text" class="form-control" name="apellidos">
+    <input type="text" class="form-control" name="apellidos" value="<?= $datos->apellidos ?>">
   </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Numero de Cuenta</label>
-    <input type="text" class="form-control" name="numCuenta">
+    <input type="text" class="form-control" name="numCuenta" value="<?= $datos->numCuenta ?>">
   </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Fecha de Nacimiento</label>
-    <input type="date" class="form-control" name="fecha">
+    <input type="date" class="form-control" name="fecha" value="<?= $datos->fecha ?>">
   </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
-    <input type="text" class="form-control" name="correo">
+    <input type="text" class="form-control" name="correo" value="<?= $datos->correo ?>">
   </div>
         <?php }
         ?>
