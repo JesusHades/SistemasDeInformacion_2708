@@ -64,18 +64,18 @@
   $sql = $conexion -> query(" select * from alumnos ");
   while ($datos = $sql->fetch_object()){ ?>
     <tr>
-      <td><?= $datos->$id ?></td>
-      <td><?= $datos->$nombres ?></td>
-      <td><?= $datos->$apellidos ?></td>
-      <td><?= $datos->$numCuenta ?></td>
-      <td><?= $datos->$fecha ?></td>
-      <td><?= $datos->$correo ?></td>
+      <td><?= $datos->id ?></td>
+      <td><?= $datos->nombres ?></td>
+      <td><?= $datos->apellidos ?></td>
+      <td><?= $datos->numCuenta ?></td>
+      <td><?= $datos->fecha ?></td>
+      <td><?= $datos->correo ?></td>
       <td>
         <a href="" class="btn btn-small btn-warning">Editar</a>
         <a href="" class="btn btn-small btn-danger">Eliminar</a>
       </td>
     </tr>
-    <?php}
+    <?php }
   ?>
 
   </tbody>
