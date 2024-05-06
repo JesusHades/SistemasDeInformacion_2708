@@ -1,4 +1,7 @@
 <?php
+include "modelo/conexion.php";
+$id = $_GET["id"];
+$sql = $conexion->query(" select * from alumnos where id =$id");
 
 ?>
 
@@ -16,8 +19,8 @@
 
         <?php
 
-        ?>
-  <div class="mb-3">
+        while($datos=$sql->fetch_object()){ ?>
+          <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombres del Alumno</label>
     <input type="text" class="form-control" name="nombres">
   </div>
@@ -41,6 +44,10 @@
     <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
     <input type="text" class="form-control" name="correo">
   </div>
+        <?php }
+        ?>
+
+
 
   <button type="submit" class="btn btn-primary" name="botonRegistrar" value="ok">Registrar</button>
 </form>
