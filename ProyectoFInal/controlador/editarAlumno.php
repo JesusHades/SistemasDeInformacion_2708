@@ -3,7 +3,7 @@
 if(!empty($_POST["botonRegistrar"])) {
     if (!empty($_POST["nombres"]) and !empty($_POST["apellidos"]) and !empty($_POST["numCuenta"]) and !empty($_POST["fecha"]) and !empty($_POST["correo"])) {
         $id = $_POST["id"];
-        $nombres = $_POST["nombre"];
+        $nombres = $_POST["nombres"];
         $apellidos = $_POST["apellidos"];
         $numCuenta = $_POST["numCuenta"];
         $fecha = $_POST["fecha"];
