@@ -10,6 +10,7 @@
     <h1 class="text-center p-3" >Proyecto Final SI</h1>
 
     <?php
+      include "modelo/conexion.php";
       include "controlador/eliminarAlumno.php";
     ?>
 
@@ -18,7 +19,6 @@
         <h3 class="text-center text-secondary">Registro de Alumnos</h3>
 
         <?php
-        include "modelo/conexion.php";
         include "controlador/registro.php";
         ?>
   <div class="mb-3">
